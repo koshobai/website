@@ -1,21 +1,15 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+const express = require('express');
+const app = express();
+const path = require('path');
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: 'AIzaSyDFWUAkzGXEF_vLLx6L4NaCCtqxGWtWx-A',
-  authDomain: 'koshobai-learning.firebaseapp.com',
-  projectId: 'koshobai-learning',
-  storageBucket: 'koshobai-learning.appspot.com',
-  messagingSenderId: '1020524338036',
-  appId: '1:1020524338036:web:c97a14685e3380b5fb6a21',
-  measurementId: 'G-MJ9R5N2S28',
-};
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'images')));
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
