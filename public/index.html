@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Koshobai</title>
     <link rel="icon" href="tariqfavi.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
@@ -110,12 +116,81 @@
     </style>
   </head>
   <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <img src="/tpix.png" alt="tpix" style="width: 50px; height: 50px" />
+
+          <span class="fs-4"></span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page"
+              >ご提供サービス</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">先生に訊きました</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">ブームボックス</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">よくあるご質問</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">お問い合わせ</a>
+          </li>
+        </ul>
+      </header>
+    </div>
     <div id="message">
       <h3>工事中です…</h3>
       <br />
       <h2>大変恐縮ですが、しばらくお待ち下さい。</h2>
-      <h1 style="font-size: 2.5rem">🏗️ Be Back Soon!</h1>
+      <h1 style="font-size: 5.5rem; text-align: center">🏗️</h1>
       <h3></h3>
     </div>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          © 2023 有限会社コショバイ
+        </p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">会社概要</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
