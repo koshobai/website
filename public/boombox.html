@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Koshobai</title>
+    <title>Koshobai Boombox</title>
     <link rel="icon" href="images/tariqfavi.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -50,79 +51,9 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body {
-        background: #eceff1;
-        color: rgba(0, 0, 0, 0.87);
-        font-family: Roboto, Helvetica, Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      #message {
-        background: white;
-        max-width: 360px;
-        margin: 100px auto 16px;
-        padding: 32px 24px;
-        border-radius: 3px;
-      }
-      #message h2 {
-        color: #ffa100;
-        font-weight: bold;
-        font-size: 16px;
-        margin: 0 0 8px;
-      }
-      #message h1 {
-        font-size: 22px;
-        font-weight: 300;
-        color: rgba(0, 0, 0, 0.6);
-        margin: 0 0 16px;
-      }
-      #message p {
-        line-height: 140%;
-        margin: 16px 0 24px;
-        font-size: 14px;
-      }
-      #message a {
-        display: block;
-        text-align: center;
-        background: #039be5;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: white;
-        padding: 16px;
-        border-radius: 4px;
-      }
-      #message,
-      #message a {
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      }
-      #load {
-        color: rgba(0, 0, 0, 0.4);
-        text-align: center;
-        font-size: 13px;
-      }
-      @media (max-width: 600px) {
-        body,
-        #message {
-          margin-top: 0;
-          background: white;
-          box-shadow: none;
-        }
-        body {
-          border-top: 16px solid #ffa100;
-        }
-      }
-      .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-        border: 0px solid;
-      }
-    </style>
   </head>
   <body>
+    <!-- nav bar -->
     <div class="container">
       <header
         class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
@@ -143,50 +74,97 @@
           <span class="fs-4"></span>
         </a>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="/sessions.html" class="nav-link" aria-current="page"
-              >サービスのご提供</a
+        <ul class="nav nav-pills gap-2">
+          <a href="/boombox">
+            <button
+              type="button"
+              class="btn btn-outline-info"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.85rem;
+              "
+              name="boombox"
             >
-          </li>
-          <li class="nav-item">
-            <a href="/devdiary.html" class="nav-link">先生に訊きました</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" style="border: 1px solid"
-              >ブームボックス</a
+              boombox
+            </button>
+          </a>
+          <a href="/docs">
+            <button
+              type="button"
+              class="btn btn-outline-info"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.85rem;
+              "
+              name="devdiary"
             >
-          </li>
+              docs
+            </button>
+          </a>
           <li class="nav-item">
             <a href="#" class="nav-link"></a>
           </li>
           <li class="nav-item">
             <a
               href="https://billing.stripe.com/p/login/00g15k6WC2uOfhS6oo"
-              class="nav-link active"
-              >受講生ログイン</a
+              class="btn btn-info"
+              style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.85rem;
+              "
+              >login</a
             >
           </li>
         </ul>
       </header>
     </div>
-    <div style="height: 800px"></div>
-    <!-- <div height="20px"></div>
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    <stripe-pricing-table
-      pricing-table-id="prctbl_1O3dIPFtWYMX3y6YiW4cZGDg"
-      publishable-key="pk_live_51O3Yf6FtWYMX3y6YeEToTOKjOgLEg1yTSeLzs3P19jB4AfjTB3rW56jnogaPZTY0dLCW0owatkbFgioqPONExPn9008qS0XAwC"
-    >
-    </stripe-pricing-table> -->
+    <!-- body section 1 -->
 
+    <h1>Three Months is All It Takes</h1>
+    <h5>
+      We help you to achieve the goals you've held onto for years, all in 14
+      weeks.
+    </h5>
+
+    <!-- body section 2: feature 1 -->
+    <h1>Pin down your あ､ア､and 🗣️ via online video calls.</h1>
+    <h5>
+      Push your pronunciation, recall, and writing abilities to new limits with
+      native instructors from the US and Canada, and apply your skills with
+      natives in Japan.
+    </h5>
+    <!-- body section 3: feature 2 -->
+    <h1>All of the resources you'll ever need and more.</h1>
+    <h5>
+      Take advantage of the Nutabi Labs documentation to learn the ins and outs
+      of the Japanese language.
+    </h5>
+    <!-- body section 4: feature 3 -->
+    <h1>Find solutions to real-world problems.</h1>
+    <h5>
+      Practice problem-solving methods ranging from non-verbal communication to
+      describing, summarizing, and reframing techniques, all by just speaking
+      and texting.
+    </h5>
+
+    <!-- body section 5: CTA to join the online community -->
+    <h1>Not quite ready to join us yet?</h1>
+    <h3>Hop into the community!</h3>
+    <h5>Find teachers, students, and fellow Japan explorers.</h5>
     <div class="container">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
-        <p class="col-md-4 mb-0 text-body-secondary">
-          © 2023 有限会社コショバイ
+        <p class="nav col-md-4 mb-0 text-body-secondary">
+          <a href="https://www.linkedin.com/company/koshobai/" target="_blank">
+            © 2023 有限会社コショバイ</a
+          >
         </p>
 
+        <!-- what is this line? ↓ -->
         <a
           href="/"
           class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -198,20 +176,27 @@
 
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
-            <a href="https://discord.gg/XNvmStGhhA" class="nav-link"
-              >コミュニティ</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="https://www.threads.net/@koshobai" class="nav-link"
-              >お問い合わせ</a
+            <a
+              href="https://discord.gg/XNvmStGhhA"
+              target="_blank"
+              class="nav-link"
+              >community</a
             >
           </li>
           <li class="nav-item">
             <a
-              href="https://www.linkedin.com/company/koshobai/"
+              href="https://www.threads.net/@koshobai"
+              target="_blank"
+              class="nav-link"
+              >support</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.instagram.com/reels/audio/155492760963590"
+              target="_blank"
               class="nav-link px-2 text-body-secondary"
-              >会社概要</a
+              >reels</a
             >
           </li>
         </ul>
